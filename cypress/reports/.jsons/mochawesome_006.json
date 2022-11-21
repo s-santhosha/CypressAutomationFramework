@@ -1,0 +1,128 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-11-21T14:04:15.906Z",
+    "end": "2022-11-21T14:04:30.308Z",
+    "duration": 14402,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fd0de570-1ac4-46c3-b3eb-3bcd9b562b5a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\specs\\ebay-ui-spec.cy.js",
+      "file": "cypress\\e2e\\specs\\ebay-ui-spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a9aeb6fa-bc82-485d-8a79-b3aae8d605ba",
+          "title": "Validate Ebay homepage",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate home page",
+              "fullTitle": "Validate Ebay homepage Validate home page",
+              "timedOut": null,
+              "duration": 3620,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_homePage.homePage.headerImage().should(\"be.visible\");",
+              "err": {},
+              "uuid": "e9906ceb-abf5-4d2d-8370-1a66a91d4a7a",
+              "parentUUID": "a9aeb6fa-bc82-485d-8a79-b3aae8d605ba",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search for mobile phones",
+              "fullTitle": "Validate Ebay homepage Search for mobile phones",
+              "timedOut": null,
+              "duration": 7245,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_homePage.homePage.searchItems(\"moblie phones\");\n_homePage.homePage.validateSearch(\"moblie phones\");",
+              "err": {},
+              "uuid": "a6d5714c-c7d6-432f-bfb3-fafec62de187",
+              "parentUUID": "a9aeb6fa-bc82-485d-8a79-b3aae8d605ba",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e9906ceb-abf5-4d2d-8370-1a66a91d4a7a",
+            "a6d5714c-c7d6-432f-bfb3-fafec62de187"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10865,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports\\html\\.jsons",
+        "charts": true,
+        "reportPageTitle": "Cypress Framework Tests",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": 15,
+  "category": {
+    "id": 0,
+    "name": "string"
+  },
+  "name": "Noodles",
+  "photoUrls": ["string"],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "sold"
+}
