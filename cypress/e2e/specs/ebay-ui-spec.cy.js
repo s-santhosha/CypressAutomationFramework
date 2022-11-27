@@ -2,7 +2,7 @@ import { homePage } from "../../pages/homePage";
 
 describe("Validate Ebay homepage", () => {
   before(() => {
-    cy.visit(Cypress.env("ebay-url"), { timeout: 30000 });
+    homePage.open(Cypress.env("ebay-url"));
   });
 
   it("Validate home page", () => {

@@ -6,11 +6,11 @@ export class HomePage {
   searchResults = ".srp-controls__count-heading";
 
   open(pageUrl) {
-    return cy.visit(pageUrl);
+    return cy.visit(pageUrl, { timeout: 30000 });
   }
 
   headerImage() {
-    return cy.get(this.ebayImage);
+    return cy.get(this.ebayImage).should("be.visible");
   }
 
   searchItems(textValue) {
