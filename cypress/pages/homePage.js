@@ -14,7 +14,9 @@ export class HomePage {
   }
 
   searchItems(textValue) {
-    return cy.get(this.searchField).type(textValue + "{enter}");
+    return cy
+      .get(this.searchField)
+      .type(textValue + "{enter}", { timeout: 5000 });
   }
 
   validateSearch(textValue) {

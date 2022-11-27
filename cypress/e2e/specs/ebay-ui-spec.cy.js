@@ -10,7 +10,7 @@ describe("Validate Ebay homepage", () => {
   });
 
   it("Search for mobile phones", () => {
-    homePage.searchItems("moblie phones");
-    homePage.validateSearch("moblie phones");
+    homePage.searchItems("mobile phones");
+    homePage.validateSearch("mobile phones");
   });
 });
